@@ -52,7 +52,7 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    const clientId = "704579473664-h1ibcbbkl9m97obn9t91kdi8t8lg8upv.apps.googleusercontent.com";
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
     const redirectUri = window.location.origin;
     const scope = encodeURIComponent(
       "openid email profile https://www.googleapis.com/auth/classroom.courses https://www.googleapis.com/auth/classroom.coursework.me https://www.googleapis.com/auth/classroom.coursework.students https://www.googleapis.com/auth/classroom.rosters https://www.googleapis.com/auth/classroom.profile.emails https://www.googleapis.com/auth/classroom.student-submissions.me.readonly https://www.googleapis.com/auth/classroom.student-submissions.students.readonly https://www.googleapis.com/auth/classroom.announcements.readonly https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly https://www.googleapis.com/auth/drive.file"
