@@ -10,7 +10,6 @@ import {
   Clock,
   PlusCircle,
   LogOut,
-  ChevronLeft
 } from 'lucide-react';
 import { NavLink } from '@/components/NavLink';
 import { useAuth } from '@/contexts/AuthContext';
@@ -25,12 +24,13 @@ import {
   SidebarMenuItem,
   SidebarHeader,
   SidebarFooter,
-  SidebarTrigger,
   useSidebar,
 } from '@/components/ui/sidebar';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import logo from '@/assets/logo.png';
+
 
 const teacherNavItems = [
   { title: 'Dashboard', url: '/teacher', icon: Home },
@@ -73,12 +73,14 @@ export function AppSidebar() {
     <Sidebar collapsible="icon" className="border-r border-border/50">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent">
-            <GraduationCap className="h-5 w-5 text-primary-foreground" />
-          </div>
+          <img 
+            src={logo} 
+            alt="SkillLMS.in" 
+            className="h-10 w-10 shrink-0 object-contain"
+          />
           {!collapsed && (
             <div className="flex flex-col">
-              <span className="font-semibold text-foreground">Classroom</span>
+              <span className="font-semibold text-foreground">SkillLMS.in</span>
               <span className={`text-xs px-2 py-0.5 rounded-full text-white w-fit ${roleColor}`}>
                 {roleLabel}
               </span>
