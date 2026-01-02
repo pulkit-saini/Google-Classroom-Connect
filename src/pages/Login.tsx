@@ -81,7 +81,7 @@ const Login = () => {
               SkillLMS.in
             </h1>
             <p className="text-muted-foreground text-sm">
-              Connect with Google Classroom to access your courses
+              Sign in to access your courses and assignments
             </p>
           </div>
 
@@ -140,8 +140,7 @@ const Login = () => {
           </Button>
 
           <p className="text-xs text-center text-muted-foreground mt-6">
-            By signing in, you agree to grant access to your Google Classroom
-            data
+            By signing in, you agree to grant access to your classroom data
           </p>
           <div className="flex items-center justify-center gap-2 mt-3">
             <Link 
