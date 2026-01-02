@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, FileText } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import logo from "@/assets/logo.png";
 
 const TermsOfService = () => {
   return (
@@ -16,9 +17,7 @@ const TermsOfService = () => {
 
         <Card className="border-border/50 shadow-sm">
           <CardHeader className="text-center pb-6 border-b border-border/50">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-4 mx-auto">
-              <FileText className="w-6 h-6 text-primary" />
-            </div>
+            <img src={logo} alt="SkillLMS.in Logo" className="w-24 h-auto mx-auto mb-4" />
             <CardTitle className="text-3xl font-bold">Terms of Service</CardTitle>
             <p className="text-sm text-muted-foreground mt-2">
               Effective Date: {new Date().toLocaleDateString()}
@@ -30,7 +29,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-xl font-semibold mb-3 text-foreground">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing or using <strong>Classroom Portal</strong> (the "Service"), you agree to be bound by these Terms of Service ("Terms"). 
+                By accessing or using <strong>SkillLMS.in</strong> (the "Service"), you agree to be bound by these Terms of Service ("Terms"). 
                 If you do not agree to these Terms, you may not access or use the Service.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
@@ -42,7 +41,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-xl font-semibold mb-3 text-foreground">2. Description of Service</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Classroom Portal is a Learning Management System (LMS) dashboard that integrates with <strong>Google Workspace for Education</strong>. 
+                SkillLMS.in is a Learning Management System (LMS) dashboard that integrates with <strong>Google Workspace for Education</strong>. 
                 The Service provides specialized interfaces for different user roles:
               </p>
               <ul className="list-disc list-inside text-muted-foreground mt-2 space-y-1 ml-2">
@@ -141,8 +140,8 @@ const TermsOfService = () => {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <div className="mt-4 p-4 bg-secondary/20 rounded-lg text-sm">
-                <p><strong>Email:</strong> info.lms.skilllms.in</p>
-                <p><strong>Address:</strong> Noida, UP </p>
+                <p><strong>Email:</strong> info@skilllms.in</p>
+                <p><strong>Address:</strong> Noida, UP</p>
               </div>
             </section>
 

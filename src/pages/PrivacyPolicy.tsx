@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Shield } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import logo from "@/assets/logo.png";
 
 const PrivacyPolicy = () => {
   const effectiveDate = new Date().toLocaleDateString('en-US', { 
@@ -22,9 +23,7 @@ const PrivacyPolicy = () => {
 
         <Card className="border-border/50">
           <CardHeader className="text-center pb-2">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 mb-4 mx-auto">
-              <Shield className="w-6 h-6 text-primary" />
-            </div>
+            <img src={logo} alt="SkillLMS.in Logo" className="w-24 h-auto mx-auto mb-4" />
             <CardTitle className="text-2xl">Privacy Policy</CardTitle>
             <p className="text-sm text-muted-foreground mt-2">
               Effective Date: {effectiveDate}
@@ -33,16 +32,16 @@ const PrivacyPolicy = () => {
           <CardContent className="prose prose-sm max-w-none text-foreground space-y-6">
             {/* App Info */}
             <div className="bg-secondary/50 rounded-lg p-4 text-sm">
-              <p className="mb-1"><strong>Application Name:</strong> Classroom Portal</p>
-              <p className="mb-1"><strong>Developer:</strong> Skilllms.in</p>
-              <p className="mb-0"><strong>Contact Email:</strong> info.lms.skilllms.in</p>
+              <p className="mb-1"><strong>Application Name:</strong> SkillLMS.in</p>
+              <p className="mb-1"><strong>Developer:</strong> SkillLMS.in</p>
+              <p className="mb-0"><strong>Contact Email:</strong> info@skilllms.in</p>
             </div>
 
             {/* Section 1 */}
             <section>
               <h2 className="text-lg font-semibold mb-3">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Welcome to Classroom Portal ("we," "our," or "us"). We provide a Learning Management System (LMS) 
+                Welcome to SkillLMS.in ("we," "our," or "us"). We provide a Learning Management System (LMS) 
                 dashboard designed to integrate seamlessly with Google Workspace for Education. This Privacy Policy 
                 explains how we collect, use, and protect the data of students, teachers, and administrators within 
                 your educational institution.
@@ -171,8 +170,8 @@ const PrivacyPolicy = () => {
                 If you have questions about this policy or the data we process for your institution, please contact us:
               </p>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm">
-                <p className="mb-1"><strong>Support Email:</strong> info.lms.skilllms.in</p>
-                <p className="mb-0"><strong>Developer Address:</strong> [INSERT PHYSICAL ADDRESS]</p>
+                <p className="mb-1"><strong>Support Email:</strong> info@skilllms.in</p>
+                <p className="mb-0"><strong>Developer Address:</strong> Noida, UP</p>
               </div>
             </section>
           </CardContent>
