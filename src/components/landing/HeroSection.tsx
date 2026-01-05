@@ -14,27 +14,23 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <BarChart3 className="h-4 w-4" />
-              Data-Driven Education Platform
-            </div>
-            
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Transform Learning with{' '}
+              The Complete{' '}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Smart Analytics
-              </span>
+                Learning Management
+              </span>{' '}
+              System
             </h1>
             
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Empower your institution with real-time insights, streamlined administration, 
-              and personalized learning experiences. The future of education management is here.
+              Create, manage, and deliver courses with ease. Empower teachers, engage students, 
+              and track progress—all from one powerful platform built for modern education.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link to="/login">
                 <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-12 text-base">
-                  Get Started Free
+                  Start Teaching Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -44,7 +40,7 @@ export function HeroSection() {
                 className="w-full sm:w-auto h-12 text-base font-semibold"
               >
                 <Play className="mr-2 h-5 w-5" />
-                Watch Demo
+                See How It Works
               </Button>
             </div>
 
@@ -59,11 +55,11 @@ export function HeroSection() {
                     />
                   ))}
                 </div>
-                <span className="text-sm text-muted-foreground">500+ Institutions</span>
+                <span className="text-sm text-muted-foreground">500+ Schools</span>
               </div>
               <div className="h-8 w-px bg-border hidden sm:block" />
               <div className="text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">4.9/5</span> Rating
+                <span className="font-semibold text-foreground">10K+</span> Courses
               </div>
               <div className="h-8 w-px bg-border hidden sm:block" />
               <div className="text-sm text-muted-foreground">
